@@ -2,6 +2,92 @@
 <html lang="en">
   <head>
     <title>{{name}} {{kind}} Reference</title>
+
+    <!-- Akamai Development Section -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Akamai Technologies">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://developer.akamai.com/assets/themes/bootstrap-3/css/hilite.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://developer.akamai.com/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <style type="text/css">
+        iframe {
+            margin-top: 0;
+            margin-left: 15px;
+        }
+
+        .navbar-default .navbar-nav>li, .navbar-inverse .navbar-nav>li {
+            font-weight: 500;
+        }
+
+        .form-horizontal .control-label {
+            text-align: left;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://developer.akamai.com/assets/css/akamai_style.css">
+    <link rel="stylesheet" href="https://developer.akamai.com/assets/themes/bootstrap-3/slick/slick.css">
+    <link rel="stylesheet" href="https://developer.akamai.com/assets/themes/bootstrap-3/slick/slick-theme.css">
+
+    <script type="text/javascript">
+        var w = window;
+        if (w.performance || w.mozPerformance || w.msPerformance || w.webkitPerformance) {
+            var d = document, AKSB = AKSB || {};
+            AKSB.q = [];
+            AKSB.mark = function (a, b) {
+                AKSB.q.push(["mark", a, b || (new Date).getTime()])
+            };
+            AKSB.measure = function (a, b, c) {
+                AKSB.q.push(["measure", a, b, c || (new Date).getTime()])
+            };
+            AKSB.done = function (a) {
+                AKSB.q.push(["done", a])
+            };
+            AKSB.mark("firstbyte", (new Date).getTime());
+            AKSB.prof = {
+                custid: "236212",
+                ustr: "",
+                originlat: 0,
+                clientrtt: 39,
+                ghostip: "65.152.2.31",
+                ipv6: true,
+                pct: 10,
+                clientip: "2601:601:c00:99:6db9:11b1:28f9:1ba",
+                requestid: "237d63d1",
+                protocol: "h2",
+                blver: 10,
+                akM: "dscx",
+                akN: "ae",
+                akTT: "O",
+                akTX: "1",
+                akTI: "237d63d1",
+                ai: "142836",
+                ra: "",
+                pmgn: "",
+                pmgi: "",
+                pmp: ""
+            };
+            (function (a) {
+                var b =
+                    d.createElement("script");
+                b.async = "async";
+                b.src = a;
+                a = d.getElementsByTagName("script");
+                a = a[a.length - 1];
+                a.parentNode.insertBefore(b, a)
+            })(("https:" === d.location.protocol ? "https:" : "http:") + "//ds-aksb-a.akamaihd.net/aksb.min.js")
+        }
+        ;
+    </script>
+
+    <script>!function(){function e(e){d.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}function n(e,n){var a=void 0!==window.aFeoApplied?"1":"0";BOOMR.addVar("ak.feo",a)}function a(e,n){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.r"];BOOMR.removeVar(a)}function t(){BOOMR.subscribe("before_beacon",n,null,null),BOOMR.addVar({"ak.v":1,"ak.cp":"236212","ak.ai":"142836","ak.ol":"0","ak.cr":72,"ak.ipv":6,"ak.proto":"h2","ak.rid":"53b22bc7","ak.r":29172,"ak.a2":0,"ak.m":"dscx","ak.n":"","ak.bpcip":"2601:601:1800:9:d869:8e40:39f8:1940","ak.cport":51485,"ak.gh":"23.32.46.109","ak.quicv":"","ak.csrc":"-"}),BOOMR.subscribe("onbeacon",a,null,null)}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetExecuted=!0;var o,i,r,c=document.createElement("iframe"),d=window;d.addEventListener?d.addEventListener("load",e,!1):d.attachEvent&&d.attachEvent("onload",e),c.src="javascript:void(0)",c.title="",c.role="presentation",(c.frameElement||c).style.cssText="width:0;height:0;border:0;display:none;",r=document.getElementsByTagName("script")[0],r.parentNode.insertBefore(c,r);try{i=c.contentWindow.document}catch(e){o=document.domain,c.src="javascript:var d=document.open();d.domain='"+o+"';void(0);",i=c.contentWindow.document}i.open()._l=function(){var e=this.createElement("script");o&&(this.domain=o),e.id="boomr-if-as",e.src="https://s.go-mpulse.net/boomerang/DPF9E-4MW6V-GEV4U-CKLH6-RZGR3",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(e)},i.write('<bo'+'dy onload="document._l();">'),i.close();"".length>0&&d&&"performance"in d&&d.performance&&d.performance.setResourceTimingBufferSize&&d.performance.setResourceTimingBufferSize(),document.addEventListener?document.addEventListener("onBoomerangLoaded",t):document.attachEvent&&document.attachEvent("onpropertychange",function(e){e||(e=window.event),e&&"onBoomerangLoaded"===e.propertyName&&t()})}}();</script>
+    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"236212",ustr:"",originlat:"0",clientrtt:"72",ghostip:"23.32.46.109",ipv6:true,pct:"10",clientip:"2601:601:1800:9:d869:8e40:39f8:1940",requestid:"53b22bc7",region:"29172",protocol:"h2",blver:13,akM:"dscx",akN:"ae",akTT:"O",akTX:"1",akTI:"53b22bc7",ai:"142836",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+    <!-- /Akamai Development Section -->
+
     <link rel="stylesheet" type="text/css" href="{{path_to_root}}css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="{{path_to_root}}css/highlight.css" />
     <meta charset="utf-8">
@@ -13,8 +99,93 @@
     <script src="{{path_to_root}}js/typeahead.jquery.js" defer></script>
     <script src="{{path_to_root}}js/jazzy.search.js" defer></script>
     {{/disable_search}}
+
   </head>
-  <body>
+  <body class="akamai">
+    <!-- Akamai Development Section -->
+          <!-- Google Tag Manager -->
+      <noscript>
+          <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PL4T8TN"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <script>(function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+              'gtm.start': new Date().getTime(), event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src =
+              '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PL4T8TN');</script>
+      <!-- End Google Tag Manager -->
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="navbar-header hidden-stop-gap">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <div class="inline-block main-logo">
+                          <a class="brand akamai" href="/index.html"><img src="https://developer.akamai.com/assets/themes/bootstrap-3/img/akamai-developer-logo.jpg" alt="Akamai Developer"></a>
+                      </div>
+                  </div>
+                  <div id="navbar_wrapper" class="navbar-collapse collapse pull-right col-md-8 col-xs-12">
+                      <ul class="nav navbar-nav navbar-right text-right pull-right text-xs-center">
+                          <li><a href="/introduction/">Get Started</a></li>
+                          <li><a href="/api/">APIs</a></li>
+                          <li><a href="/sdk/" class="active">SDKs</a></li>
+                          <li><a href="/learn/">Learn</a></li>
+                          <!-- Builds Intro, ... -->
+                          <li>
+                              <a href="https://github.com/akamai-open" target="_blank">Code</a>
+                          </li>
+                          <li>
+                              <span id="rss_aggregator_wrapper">
+                                <a href="https://community.akamai.com/community/developer/content" target="_blank">Community</a>
+                              </span>
+                          </li>
+                          <li>
+                              <a href="/blog">Blog</a>
+                          </li>
+                          <li>
+                              <a href="/register" class="btn btn-primary btn-small">Register</a>
+                          </li>
+                          <li class="navbar-form navbar-right">
+                              <form action="/search.html" class="navbar-search left-inner-addon" accept-charset="UTF-8">
+                                  <i class="glyphicon glyphicon-search"></i>
+                                  <input class="form-control header-search" type="text" name="q" size="31" placeholder="Search">
+                              </form>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="app-content">
+          <main class="container-fluid">
+              <div class="row">
+                  <div class="jumbotron pagehead">
+                      <div class="row">
+                          <div class="width-left-nav inline-block hidden-sm hidden-xs">
+                              &nbsp;
+                          </div>
+                          <div class="inline-block text-xs-center">
+                              <h1>Adaptive Media Player</h1>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="row">
+    <!-- /Akamai Development Section -->
+
 
     {{#dash_type}}
     <a name="//apple_ref/{{language_stub}}/{{dash_type}}/{{name}}" class="dashAnchor"></a>
@@ -32,7 +203,7 @@
 
     <div class="content-wrapper">
       {{> nav}}
-      <article class="main-content">
+      <article class="main-content-jazzy">
 
         <section class="section">
           <div class="section-content">
@@ -53,6 +224,110 @@
       </article>
     </div>
     {{> footer}}
+
+    <!-- Akamai Development Section -->
+          </div>
+      </main>
+      </div>
+
+      <footer class="min-1076">
+          <div class="container">
+              <div class="content clearfix">
+                  <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+                          Follow Us:
+                          <a class="icon-facebook" href="http://www.facebook.com/AkamaiTechnologies"></a>
+                          <a class="icon-twitter" href="http://twitter.com/#!/akamaidev"></a>
+                          <a class="icon-linkedin" href="http://www.linkedin.com/company/akamai-technologies"></a>
+                          <a class="icon-youtube" href="http://www.youtube.com/user/akamaitechnologies"></a>
+                          <a class="icon-slideshare" href="http://www.slideshare.net/AkamaiTechnologies"></a>
+                          <a class="icon-blogger" href="https://blogs.akamai.com/"></a>
+                          <a class="icon-rss" href="http://www.akamai.com/dl/akamai/akamairss.xml"></a>
+                      </div>
+                  </div>
+                  <div class="row top-10">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <p class="footer-links">
+                    <span class="group-1">
+                      <a href="https://www.akamai.com/us/en/about/index.jsp" target="_blank">About</a>
+                      <a href="https://www.akamai.com/us/en/about/news/index.jsp" target="_blank">Newsroom</a>
+                      <a href="https://blogs.akamai.com/" target="_blank">Blog</a>
+                      <a href="http://www.ir.akamai.com/" target="_blank">Investors</a>
+                    </span> |
+                              <span class="group-2">
+                      <a href="https://www.akamai.com/us/en/support/index.jsp" target="_blank">Support</a>
+                      <a href="https://control.akamai.com/" target="_blank">Luna Control Center</a>
+                    </span> |
+                              <span class="group-3"> <a
+                                      href="https://www.akamai.com/us/en/privacy-policies/index.jsp" target="_blank">Privacy &amp; Policies</a>
+                    </span>
+                          </p>
+                          <p class="copyright">&copy; 2018 Akamai Technologies</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+      <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script type="text/javascript" src="https://developer.akamai.com/assets/themes/bootstrap-3/js/dist/global.min.js"></script><!-- initialize bootstrap popover for community RSS aggregator -->
+      <div id="rss_aggregator_html" class="hide">
+          <div id="divFeed" class="rss_aggregator"> </div>
+      </div>
+      <script type="text/javascript">
+          $('#rss_aggregator_popover').popover({
+              html: true,
+              placement: 'bottom',
+              trigger: 'manual',
+              content: function() {
+                  return $('#rss_aggregator_html').html()
+              }
+          })
+              .on("click", function () {
+                  $(this).popover("show");
+              })
+              .on('focusout', function() {	// DEBUG: comment out to inspect popover HTML
+                  setTimeout(function(t) {	// DEBUG: comment out to inspect popover HTML
+                      $(t).popover("hide");	// DEBUG: comment out to inspect popover HTML
+                  }, 100, this);		// DEBUG: comment out to inspect popover HTML
+              })
+          ;
+      </script>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              $('#divFeed').rssfeed('https://community.akamai.com/view-browse-feed.jspa?containerType=14&userID=-1&browseSite=place-content&filterID=contentstatus[published]&browseViewID=placeContent&containerID=2009', {
+                  limit: 5,		       // limit_default: 10,
+                  // offset_default: 1,
+                  header: false,		// header_default: true,
+                  // titletag_default: 'h4',
+                  // date_default: true,
+                  dateformat: 'timeline',	// dateformat_default: 'datetime',
+                  // content_default: true,
+                  // snippet_default: true,
+                  // media_default: true,
+                  // showerror_default: true,
+                  // errormsg_default: '',
+                  // key_default: null,
+                  ssl: true, // ssl_default: false,
+                  linktarget: '_blank',	// linktarget_default: '_self',
+                  // linkredirect_default: '',
+                  // linkcontent_default: false,
+                  // sort_default: '',
+                  // sortasc_default: true,
+                  // historical_default: false
+              });
+          });
+
+          (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+              (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+              e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+          })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+          _st('install','CLvgtFmxKWyXZPw6wHQR','2.0.0');
+      </script>
+    <!-- /Akamai Development Section -->
+
   </body>
-</div>
 </html>
