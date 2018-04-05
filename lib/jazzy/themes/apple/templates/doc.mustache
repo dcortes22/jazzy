@@ -9,39 +9,225 @@
     <script src="{{path_to_root}}js/jazzy.js" defer></script>
     {{{custom_head}}}
   </head>
-  <body>
-    {{#dash_type}}
-    <a name="//apple_ref/{{language_stub}}/{{dash_type}}/{{name}}" class="dashAnchor"></a>
-    {{/dash_type}}
-    <a title="{{name}} {{kind}} Reference"></a>
-    {{> header}}
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="{{path_to_root}}index.html">{{module_name}} Reference</a>
-        <img id="carat" src="{{path_to_root}}img/carat.png" />
-        {{name}} {{kind}} Reference
-      </p>
-    </div>
-    <div class="content-wrapper">
-      {{> nav}}
-      <article class="main-content">
-        <section>
-          <section class="section">
-            {{^hide_name}}<h1>{{name}}</h1>{{/hide_name}}
-            {{#declaration}}
-              <div class="declaration">
-                <div class="language">
-                  {{{declaration}}}
+  
+  <body class="akamai">
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PL4T8TN"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PL4T8TN');</script>
+<!-- End Google Tag Manager -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar-header hidden-stop-gap">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="inline-block main-logo">
+                    <a class="brand akamai" href="/index.html"><img src="https://developer.akamai.com/assets/themes/bootstrap-3/img/akamai-developer-logo.jpg" alt="Akamai Developer"></a>
                 </div>
-              </div>
-            {{/declaration}}
-            {{{overview}}}
-          </section>
-          {{> tasks}}
-        </section>
-        {{> footer}}
-      </article>
+            </div>
+            <div id="navbar_wrapper" class="navbar-collapse collapse pull-right col-md-8 col-xs-12">
+                <ul class="nav navbar-nav navbar-right text-right pull-right text-xs-center">
+                    <li><a href="/introduction/">Get Started</a></li>
+                    <li><a href="/api/">APIs</a></li>
+                    <li><a href="/sdk/" class="active">SDKs</a></li>
+                    <li><a href="/learn/">Learn</a></li>
+                    <!-- Builds Intro, ... -->
+                    <li>
+                        <a href="https://github.com/akamai-open" target="_blank">Code</a>
+                    </li>
+                    <li>
+                        <span id="rss_aggregator_wrapper">
+                          <a href="https://community.akamai.com/community/developer/content" target="_blank">Community</a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/register" class="btn btn-primary btn-small">Register</a>
+                    </li>
+                    <li class="navbar-form navbar-right">
+                        <form action="/search.html" class="navbar-search left-inner-addon" accept-charset="UTF-8">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input class="form-control header-search" type="text" name="q" size="31" placeholder="Search">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </body>
 </div>
+
+<div class="app-content">
+    <main class="container-fluid">
+        <div class="row">
+            <div class="jumbotron pagehead">
+                <div class="row">
+                    <div class="width-left-nav inline-block hidden-sm hidden-xs">
+                        &nbsp;
+                    </div>
+                    <div class="inline-block text-xs-center">
+                        <h1>Adaptive Media Player</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+  
+          {{#dash_type}}
+          <a name="//apple_ref/{{language_stub}}/{{dash_type}}/{{name}}" class="dashAnchor"></a>
+          {{/dash_type}}
+          <a title="{{name}} {{kind}} Reference"></a>
+          {{> header}}
+          <div class="content-wrapper">
+            <p id="breadcrumbs">
+              <a href="{{path_to_root}}index.html">{{module_name}} Reference</a>
+              <img id="carat" src="{{path_to_root}}img/carat.png" />
+              {{name}} {{kind}} Reference
+            </p>
+          </div>
+          <div class="content-wrapper">
+            {{> nav}}
+            <article class="main-content">
+              <section>
+                <section class="section">
+                  {{^hide_name}}<h1>{{name}}</h1>{{/hide_name}}
+                  {{#declaration}}
+                    <div class="declaration">
+                      <div class="language">
+                        {{{declaration}}}
+                      </div>
+                    </div>
+                  {{/declaration}}
+                  {{{overview}}}
+                </section>
+                {{> tasks}}
+              </section>
+              {{> footer}}
+            </article>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+<footer class="min-1076">
+            <div class="container">
+                <div class="content clearfix">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+                            Follow Us:
+                            <a class="icon-facebook" href="http://www.facebook.com/AkamaiTechnologies"></a>
+                            <a class="icon-twitter" href="http://twitter.com/#!/akamaidev"></a>
+                            <a class="icon-linkedin" href="http://www.linkedin.com/company/akamai-technologies"></a>
+                            <a class="icon-youtube" href="http://www.youtube.com/user/akamaitechnologies"></a>
+                            <a class="icon-slideshare" href="http://www.slideshare.net/AkamaiTechnologies"></a>
+                            <a class="icon-blogger" href="https://blogs.akamai.com/"></a>
+                            <a class="icon-rss" href="http://www.akamai.com/dl/akamai/akamairss.xml"></a>
+                        </div>
+                    </div>
+                    <div class="row top-10">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p class="footer-links">
+                      <span class="group-1">
+                          <a href="https://www.akamai.com/us/en/about/index.jsp" target="_blank">About</a>
+                          <a href="https://www.akamai.com/us/en/about/news/index.jsp" target="_blank">Newsroom</a>
+                          <a href="https://blogs.akamai.com/" target="_blank">Blog</a>
+                          <a href="http://www.ir.akamai.com/" target="_blank">Investors</a>
+                      </span> |
+                                <span class="group-2">
+                          <a href="https://www.akamai.com/us/en/support/index.jsp" target="_blank">Support</a>
+                          <a href="https://control.akamai.com/" target="_blank">Luna Control Center</a>
+                      </span> |
+                                <span class="group-3"> <a
+                                        href="https://www.akamai.com/us/en/privacy-policies/index.jsp" target="_blank">Privacy &amp; Policies</a>
+                      </span>
+                            </p>
+                            <p class="copyright">&copy; 2018 Akamai Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://developer.akamai.com/assets/themes/bootstrap-3/js/dist/global.min.js"></script><!-- initialize bootstrap popover for community RSS aggregator -->
+        <div id="rss_aggregator_html" class="hide">
+            <div id="divFeed" class="rss_aggregator"> </div>
+        </div>
+        <script type="text/javascript">
+            $('#rss_aggregator_popover').popover({
+                html: true,
+                placement: 'bottom',
+                trigger: 'manual',
+                content: function() {
+                    return $('#rss_aggregator_html').html()
+                }
+            })
+                .on("click", function () {
+                    $(this).popover("show");
+                })
+                .on('focusout', function() {	// DEBUG: comment out to inspect popover HTML
+                    setTimeout(function(t) {	// DEBUG: comment out to inspect popover HTML
+                        $(t).popover("hide");	// DEBUG: comment out to inspect popover HTML
+                    }, 100, this);		// DEBUG: comment out to inspect popover HTML
+                })
+            ;
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#divFeed').rssfeed('https://community.akamai.com/view-browse-feed.jspa?containerType=14&userID=-1&browseSite=place-content&filterID=contentstatus[published]&browseViewID=placeContent&containerID=2009', {
+                    limit: 5,		       // limit_default: 10,
+                    // offset_default: 1,
+                    header: false,		// header_default: true,
+                    // titletag_default: 'h4',
+                    // date_default: true,
+                    dateformat: 'timeline',	// dateformat_default: 'datetime',
+                    // content_default: true,
+                    // snippet_default: true,
+                    // media_default: true,
+                    // showerror_default: true,
+                    // errormsg_default: '',
+                    // key_default: null,
+                    ssl: true, // ssl_default: false,
+                    linktarget: '_blank',	// linktarget_default: '_self',
+                    // linkredirect_default: '',
+                    // linkcontent_default: false,
+                    // sort_default: '',
+                    // sortasc_default: true,
+                    // historical_default: false
+                });
+            });
+        
+            (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+                (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+                e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+            })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+        
+            _st('install','CLvgtFmxKWyXZPw6wHQR','2.0.0');
+        </script>
+
+  </body>
+
 </html>
